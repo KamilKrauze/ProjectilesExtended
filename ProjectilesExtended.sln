@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectilesExtended", "ProjectilesExtended\ProjectilesExtended\ProjectilesExtended.csproj", "{C23C904F-A076-4550-AC6A-3D6303302EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "ProjectilesExtended\ZZCakeBuild\CakeBuild.csproj", "{A9ED8FDE-1A2F-4713-B1C1-408773CD5F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overhaullib", "OverhaulLib\Overhaullib.csproj", "{8AB88017-2264-49FD-BF79-A0A0C7E4CC7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C23C904F-A076-4550-AC6A-3D6303302EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23C904F-A076-4550-AC6A-3D6303302EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23C904F-A076-4550-AC6A-3D6303302EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23C904F-A076-4550-AC6A-3D6303302EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9ED8FDE-1A2F-4713-B1C1-408773CD5F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9ED8FDE-1A2F-4713-B1C1-408773CD5F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9ED8FDE-1A2F-4713-B1C1-408773CD5F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9ED8FDE-1A2F-4713-B1C1-408773CD5F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB88017-2264-49FD-BF79-A0A0C7E4CC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB88017-2264-49FD-BF79-A0A0C7E4CC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB88017-2264-49FD-BF79-A0A0C7E4CC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB88017-2264-49FD-BF79-A0A0C7E4CC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
