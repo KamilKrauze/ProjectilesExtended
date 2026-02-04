@@ -47,7 +47,6 @@ public class ProjectileSounds : EntityBehavior
             OnTickActions += PlayFlyingSoundAtInterval;
         }
     }
-    
     public override void OnGameTick(float deltaTime)
     {
         if (clientAPI == null || !entity.Alive)
@@ -55,7 +54,16 @@ public class ProjectileSounds : EntityBehavior
 
         OnTickActions.Invoke(this, EventArgs.Empty);
     }
-    
+
+    public override void OnEntityDespawn(EntityDespawnData despawn)
+    {
+        base.OnEntityDespawn(despawn);
+        if (FlyingSound.IsReady && FlyingSound.IsPlaying)
+        {
+            FlyingSound.Stop();
+        }
+    }
+
     private void PlayFlyingSoundAtInterval(object? caller, EventArgs args)
     {
         double speed = entity.SidedPos.Motion.LengthSq();

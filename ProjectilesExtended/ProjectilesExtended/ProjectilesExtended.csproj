@@ -5,6 +5,18 @@
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
         <Nullable>enable</Nullable>
+        <Title>Projectiles Extended</Title>
+        <Authors>Soul7734</Authors>
+        <PackageProjectUrl>https://github.com/KamilKrauze/ProjectilesExtended/tree/master</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/KamilKrauze/ProjectilesExtended/tree/master</RepositoryUrl>
+        <RepositoryType>GitHub</RepositoryType>
+        <PackageTags>1.0.0</PackageTags>
+        <PackageReleaseNotes>Supports entities to have a looping sound while in flight.</PackageReleaseNotes>
+        <Company>Soul7734</Company>
+        <AssemblyVersion>1.26.1</AssemblyVersion>
+        <FileVersion>1.0.1</FileVersion>
+        <IsPackable>false</IsPackable>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
