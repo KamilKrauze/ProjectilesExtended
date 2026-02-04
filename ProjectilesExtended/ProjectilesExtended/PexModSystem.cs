@@ -15,8 +15,11 @@ public class PexModSystem : ModSystem
     // Useful for registering block/entity classes on both sides
     public override void Start(ICoreAPI api)
     {
-        ModID = Mod.Info.ModID;
-        
+        if (ModID == string.Empty)
+        {
+            ModID = Mod.Info.ModID;
+        }
+
         Mod.Logger.Notification($"Loading {MOD_NAME} {api.Side}");
     }
 

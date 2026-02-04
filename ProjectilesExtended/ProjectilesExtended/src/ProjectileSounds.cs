@@ -24,8 +24,15 @@ public class ProjectileSounds : EntityBehavior
         base.Initialize(properties, attributes);
         
         clientAPI = entity.Api as ICoreClientAPI;
+
+        JsonObject flyingSoundCfg = attributes["flyingSound"];
+        if (flyingSoundCfg == null)
+        {
+            return;
+        }
         
-        string soundLocation = attributes["flying_sound"].AsString(null);
+        string soundLocation = flyingSoundCfg["assetLocation"].AsString(null);
+        float baseVolume = flyingSoundCfg["baseVolume"].AsFloat(1.0f);
         if (soundLocation == null)
         {
             return;
@@ -35,7 +42,7 @@ public class ProjectileSounds : EntityBehavior
         if (FlyingSound != null)
         {
             FlyingSound.SetLooping(true);
-            FlyingSound.SetVolume(10.0f);
+            FlyingSound.SetVolume(baseVolume);
             FlyingSound.Params.SoundType = EnumSoundType.Entity;
             OnTickActions += PlayFlyingSoundAtInterval;
         }
