@@ -1,14 +1,17 @@
 {
-    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
-    "type": "Code",
-    "modid": "pex",
+    "type": "code",
     "name": "Projectiles Extended",
-    "authors": [
-        "Soul7734"
-    ],
-    "description": "To be added",
+    "modid": "pex",
     "version": "0.0.1",
+
+    "description": "",
+    "authors": [ "Soul7734" ],
+
     "dependencies": {
         "game": "1.21.6"
-    }
+    },
+
+    "side" : "universal",
+    "requiredOnClient": true,
+    "requiredOnServer": false
 }
